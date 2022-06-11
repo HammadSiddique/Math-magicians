@@ -1,16 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-1: #dbe2ef;
+  --color-2: #3f72af;
+  --color-3: #1d3c61;
+}
+
 .App {
   text-align: center;
 }
 
 html {
-  background-color: rgb(216, 216, 216);
+  background-color: var(--color-1);
 }
 
-body {
+header {
+  height: 5rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  height: 100vh;
+  background-color: #fff;
+  box-shadow: rgb(50 50 93 / 25%) 0 4px 6px -2px;
+}
+
+.logo {
+  color: var(--color-3);
+  padding-left: 2rem;
+}
+
+nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-item {
+  color: var(--color-2);
+  padding-right: 2.5rem;
+  text-decoration: none;
+}
+
+.home-page {
+  padding: 2% 5%;
+  text-align: center;
+  height: 80vh;
+}
+
+.heading {
+  color: var(--color-3);
+  font-size: 2.5rem;
+}
+
+.description {
+  font-size: 1.2rem;
+  padding-top: 3%;
+}
+
+.home-page img {
+  fill: var(--color-3);
+  filter:
+    invert(19%) sepia(13%) saturate(3864%) hue-rotate(177deg)
+    brightness(90%) contrast(88%);
+}
+
+.calc-page {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 2rem;
 }
 
 .container {
@@ -24,9 +86,9 @@ body {
 
 .result {
   grid-column: 1 / span 4;
-  background-color: gray;
+  background-color: var(--color-2);
   text-align: right;
-  padding: 2.25rem 2rem;
+  padding: 7%;
   font-size: 1.5rem;
   color: #fff;
 }
@@ -41,21 +103,67 @@ button {
 }
 
 .operator-side {
-  background-color: orange;
-  transition: 0.3s;
+  background-color: var(--color-3);
+  color: var(--color-1);
+  transition: 0.25s;
 }
 
 .operator-side:hover {
-  background-color: rgb(255, 123, 0);
+  background-color: var(--color-2);
   opacity: 0.8;
 }
 
 .operator-top,
 .numeric {
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 .operator-top:hover,
 .numeric:hover {
-  background-color: rgb(214, 214, 214);
+  background-color: var(--color-1);
+}
+
+.quoteHeading {
+  margin-top: 4%;
+  position: relative;
+  font-weight: 400;
+  color: var(--color-3);
+  font-style: italic;
+  font-size: 18px;
+  line-height: 24px;
+  width: 300px;
+  background: #fff;
+  border-radius: 40px;
+  padding: 24px;
+  text-align: center;
+  left: 40%;
+}
+
+.quoteHeading::before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-left: 24px solid #fff;
+  border-right: 12px solid transparent;
+  border-top: 12px solid #fff;
+  border-bottom: 20px solid transparent;
+  left: 32px;
+  bottom: -24px;
+}
+
+.einstein {
+  margin-top: 0.5rem;
+  position: relative;
+  font-size: 1.5rem;
+  color: var(--color-2);
+  font-style: italic;
+  left: 58%;
+}
+
+.quotePage img {
+  width: 17%;
+  position: absolute;
+  left: 30%;
+  bottom: 12%;
 }
