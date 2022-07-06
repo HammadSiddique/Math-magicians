@@ -15,7 +15,7 @@
 
 ## Live Demo
 
-[Netlify Demo](https://62a516a5a027846fe99c7448--heartfelt-pothos-ca1b87.netlify.app/)
+[Netlify Demo](https://heartfelt-pothos-ca1b87.netlify.app/)
 
 ## Available Scripts
 
