@@ -51,7 +51,7 @@ Your app is ready to be deployed!
 
 - GitHub: [@HammadSiddique](https://github.com/HammadSiddique)
 - Twitter: [@hs_devv](https://twitter.com/hs_devv)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/hammad-siddique-6a5469231/)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/-hammadsiddique//)
 
 ## 🤝 Contributing
 
